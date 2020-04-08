@@ -20,17 +20,12 @@ export default class App extends Component {
     return (
       <div>
         <Router>
-
-       <Header />
-        
-        <Switch>
-          
-          <Route exact path='/' render={(props) => <Home {...props} setUser={ this.setUser } user={ this.state.user }/>}/>
-          <Route exact path='/about' component={About} />
-        
-        </Switch>
-      </Router>
-
+          <Header />
+            <Switch>
+              <Route exact path='/' render={(props) => <Home {...props} setUser={ this.setUser } user={ this.state.user }/>}/>
+              <Route exact path='/about' component={About} />
+            </Switch>
+        </Router>
       </div>
     )
   }
