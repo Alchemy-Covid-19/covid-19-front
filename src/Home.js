@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 import request from 'superagent';
-import Location from './Location.js'
+//import Location from './Location.js'
 
 export default class Home extends Component {
   state = {
@@ -25,7 +25,10 @@ export default class Home extends Component {
   }
   render() {
     return (
-        <div id="login">Name: <input value={this.state.nameSignUp} onChange={(e) => this.setState({ nameSignUp: e.target.value })} />Phone Number: +1 <input value={this.state.phoneNumberSignUp} type="phone number" onChange={(e) => this.setState({ phoneNumberSignUp: e.target.value })} />Location: <input value={this.state.locationSignUp} type="location" onChange={(e) => this.setState({ locationSignUp: e.target.value })} />
+        <div id="login">Name: <input value={this.state.nameSignUp} onChange={(e) => this.setState({ nameSignUp: e.target.value })} />Phone Number: +1 <input value={this.state.phoneNumberSignUp} type="phone number" onChange={(e) => this.setState({ phoneNumberSignUp: e.target.value })} />
+        
+        {/* Insert Location select form here */}
+        
           <span>
           <button onClick={this.handleSignUp}>Sign Up</button>
           </span>

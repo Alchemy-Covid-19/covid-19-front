@@ -7,14 +7,8 @@ export default class Location extends Component {
         allLocations: []
     }
     handleSelect = (e) => {
-        this.setState({ select: e.target.value })
-    }
-    handleSearch = async (e) => {
-        e.preventDefault();
-        const data = await request.get(`https://covid-19-stat-dev.herokuapp.com/api/signup/${this.state.select}`)
-        this.setState({
-            allLocations: data.body.states,
-        });
+		this.setState({ select: e.target.value })
+		
     }
     render() {
         return (
