@@ -5,7 +5,7 @@ import {
   BrowserRouter as Router
 } from 'react-router-dom';
 
-import Header from './Header.js';
+import Header from './Nav.js';
 import Home from './Home.js';
 import About from './About.js';
 

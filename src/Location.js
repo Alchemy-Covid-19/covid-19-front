@@ -3,7 +3,7 @@ import request from 'superagent';
 
 export default class Location extends Component {
     state = {
-        select: 8,
+        select: 56,
         allLocations: []
     }
     handleSelect = (e) => {
