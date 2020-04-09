@@ -7,6 +7,7 @@ export default class Home extends Component {
   state = {
     nameSignUp: '',
     phoneNumberSignUp: '',
+    locationSignUp:'',
   }
   handleSignUp = async () => {
     // making a request to our signup route
