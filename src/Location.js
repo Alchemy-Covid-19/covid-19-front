@@ -4,7 +4,7 @@ import request from 'superagent';
 export default class Location extends Component {
     state = {
         select: 56,
-        allLocations: []
+        setLocations: []
     }
     handleSelect = (e) => {
 		this.setState({ select: e.target.value })
@@ -63,7 +63,7 @@ export default class Location extends Component {
 						<option value="Tennessee">Tennessee</option>
 						<option value="Texas">Texas</option>
 						<option value="Utah">Utah</option>
-						<option value="United States Minor Outlying Islands">United States Minor Outlying Islands(UM)</option>
+						<option value="United States Minor Outlying Islands">United States Minor Outlying Island (UM)</option>
 						<option value="Vermont">Vermont</option>
 						<option value="Virginia">Virginia</option>
 						<option value="Virgin Island">Virgin Islands (VI)</option>
