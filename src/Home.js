@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import { Link } from "react-router-dom";
 import request from 'superagent';
-import Location from './Location.js'
+import Location from './Location.js';
+import cors from 'cors';
 
 export default class Home extends Component {
   state = {
@@ -24,13 +25,18 @@ export default class Home extends Component {
     this.props.history.push('/confirmation');
 
   }
+  handleSelect = (e) => {
+		this.setState({ select: e.target.value })
+		
+    }
+
   render() {
     return (
       <div id="login">
         <li>
           <ul>Name: <input value={this.state.nameSignUp} onChange={(e) => this.setState({ nameSignUp: e.target.value })} /></ul>
           <ul>Phone Number: +1 <input value={this.state.phoneNumberSignUp} type="phone number" onChange={(e) => this.setState({ phoneNumberSignUp: e.target.value })} /></ul>
-          <ul>Location: <Location/> </ul>
+          <ul>Location: <Location handleSelect={this.handleSelect}/> </ul>
         </li>
           <button onClick={this.handleSignUp}>Sign Up</button>
         </div>
