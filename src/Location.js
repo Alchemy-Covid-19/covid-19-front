@@ -12,6 +12,7 @@ export default class Location extends Component {
             <div className="state-container">
                 <form id="states">
                     <select onChange={this.props.handleSelect} id="states" name="states">
+						<option value="United States">United States</option>
 						<option value="Alabama">Alabama</option>
 						<option value="Alaska">Alaska</option>
 						<option value="American Samoa">American Samoa (AS)</option>

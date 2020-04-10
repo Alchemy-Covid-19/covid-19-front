@@ -19,20 +19,20 @@ export default class Home extends Component {
       location: this.state.locationSignUp
     })
 
-    this.props.setUser(signUp);
-    localStorage.setItem('user', JSON.stringify(signUp.body));
+    // this.props.setUser(signUp);
+    // localStorage.setItem('user', JSON.stringify(signUp.body));
     // this redirects the user after sign up
     this.props.history.push('/confirmation');
 
   }
   handleSelect = (e) => {
-		this.setState({ select: e.target.value })
+		this.setState({ locationSignUp: e.target.value })
 		
     }
 
   render() {
     return (
-      <div id="login">
+      <div id="login">8
         <li>
           <ul>Name: <input value={this.state.nameSignUp} onChange={(e) => this.setState({ nameSignUp: e.target.value })} /></ul>
           <ul>Phone Number: +1 <input value={this.state.phoneNumberSignUp} type="phone number" onChange={(e) => this.setState({ phoneNumberSignUp: e.target.value })} /></ul>
