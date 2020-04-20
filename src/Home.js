@@ -10,10 +10,12 @@ export default class Home extends Component {
     phoneNumberSignUp: '',
     locationSignUp:'',
   }
-  handleSignUp = async () => {
+  handleSignUp = async (e) => {
+    e.preventDefault();
     // making a request to our signup route
 
-    const signUp = await request.post(`https://covid-19-stat-production.herokuapp.com/api/v1/users/welcome `, {
+    await request
+      .post('https://covid-19-stat-dev.herokuapp.com/api/v1/users/welcome', {
       firstName: this.state.nameSignUp,
       phoneNumber: this.state.phoneNumberSignUp,
       location: this.state.locationSignUp
@@ -32,14 +34,20 @@ export default class Home extends Component {
 
   render() {
     return (
+
+
+      <form onSubmit={ this.handleSignUp }>
+
       <div id="login">8
         <li>
           <ul>Name: <input value={this.state.nameSignUp} onChange={(e) => this.setState({ nameSignUp: e.target.value })} /></ul>
           <ul>Phone Number: +1 <input value={this.state.phoneNumberSignUp} type="phone number" onChange={(e) => this.setState({ phoneNumberSignUp: e.target.value })} /></ul>
           <ul>Location: <Location handleSelect={this.handleSelect}/> </ul>
         </li>
-          <button onClick={this.handleSignUp}>Sign Up</button>
+          <button>Sign Up</button>
         </div>
+      </form>
+
     )
   }
 }

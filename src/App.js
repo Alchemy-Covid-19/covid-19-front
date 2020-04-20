@@ -4,6 +4,7 @@ import {
   Switch,
   BrowserRouter as Router
 } from 'react-router-dom';
+import Header from './Header';
 
 // import Header from './Nav.js';
 import Home from './Home.js';
@@ -23,6 +24,7 @@ export default class App extends Component {
       <div>
         <Router>
           {/* <Header /> */}
+          <Header />
             <Switch>
               <Route exact path='/' render={(props) => <Home {...props} setUser={ this.setUser } user={ this.state.user }/>}/> 
               <Route exact path='/about' component={About} />
