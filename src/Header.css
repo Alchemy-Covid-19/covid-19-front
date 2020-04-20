@@ -1,0 +1,14 @@
+.logo {
+    display: flex;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 25%;
+    min-height: 25%;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 10px;
+    text-decoration: none;
+    pointer-events: none;
+
+}
