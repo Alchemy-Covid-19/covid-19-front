@@ -1,0 +1,11 @@
+.footer__links {
+    font-weight: 200;
+    text-align: left;
+    font-size: 17px;
+    margin-top: 600px;
+    bottom: 40%;
+}
+.footerNav {
+    color: white;
+    text-decoration: none;    
+}
