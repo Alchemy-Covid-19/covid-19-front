@@ -6,9 +6,10 @@ export default class Header extends Component {
         return (
     
           <div className="header">
-            <img className="logo" src="PingLogo.png" alt="Ping logo" />
+            <img className="logo" src="Ping-Icon.png" alt="Ping logo" />
             <div className="nav">
               <ul className="nav__links" >
+                <li><Link to="/">Home</Link></li>
                 <li><Link to="/resources">Resources</Link></li>
                 <li><Link to="/about">About</Link></li>
               </ul>
