@@ -6,15 +6,13 @@ export default class Location extends Component {
         select: 56,
         setLocations: []
     }
-    handleSelect = (e) => {
-		this.setState({ select: e.target.value })
-		
-    }
+
     render() {
         return (
             <div className="state-container">
                 <form id="states">
-                    <select onChange={this.handleSelect} id="states" name="states">
+                    <select onChange={this.props.handleSelect} id="states" name="states">
+						<option value="United States">United States</option>
 						<option value="Alabama">Alabama</option>
 						<option value="Alaska">Alaska</option>
 						<option value="American Samoa">American Samoa (AS)</option>
