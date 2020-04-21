@@ -14,16 +14,15 @@
     text-align:justify;
     color: white;
     font-family: 'PT Serif', serif;
-
 }
 
 .signup{
     color: white;
-   
     display: inline-block;
     font-family: 'PT Serif', serif;
     text-align: right;
 }
+
 .p {
     color: white;
     font-weight: light;
@@ -32,6 +31,7 @@
 li {
     list-style-type: none;
 }
+
 button {
     padding: 9px 25px;
     background-color: rgba(3, 248, 207, 0.815);
@@ -39,5 +39,4 @@ button {
     border-radius: 60%;
     cursor: pointer;
     transition: all 0.3s ease 0s;
-    
 }

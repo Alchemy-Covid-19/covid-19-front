@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
-import { Link } from "react-router-dom";
 import request from 'superagent';
 import Location from './Location.js';
 import './Home.css';
-import Footer from './Footer.js';
 
 export default class Home extends Component {
   state = {
@@ -11,29 +9,42 @@ export default class Home extends Component {
     phoneNumberSignUp: '',
     locationSignUp:'',
   }
+
   handleSignUp = async (e) => {
     e.preventDefault();
-    // making a request to our signup route
-
     await request
+<<<<<<< HEAD
       .post('https://covid-19-stat-dev.herokuapp.com/api/v1/users/welcome', {
       firstName: this.state.nameSignUp,
       phoneNumber: this.state.phoneNumberSignUp,
       location: this.state.locationSignUp
     })
+=======
+      .post('http://localhost:7890/api/v1/users/welcome', {
+        firstName: this.state.nameSignUp,
+        phoneNumber: this.state.phoneNumberSignUp,
+        location: this.state.locationSignUp
+      })
+>>>>>>> 2701220fa7e54eed6367f7d02ba9b4e2be032bce
 
-    // this.props.setUser(signUp);
-    // localStorage.setItem('user', JSON.stringify(signUp.body));
-    // this redirects the user after sign up
     this.props.history.push('/confirmation');
   }
+  
   handleSelect = (e) => {
 		this.setState({ locationSignUp: e.target.value })
-    }
+  }
 
   render() {
     return (
       <div id="login">
+        <section>
+          <p>Social Distance-Ping is here to help you stay up to date with the latest COVID-19 stats without getting overwhelmed. We collect the most <a href="https://coronavirus.1point3acres.com/en">up-to-date numbers from the same data source used by the CDC</a>, and text them to your phone as frequently (or infrequently) as you like.</p>
+          <p>There are two main ways to use this app:</p>
+          <ul>
+            <li>`1) For on-demand stats, text the name of any US state or territory to +1 309-408-0627. We will reply with the current information for your chosen location. We will not store your phone number, and you will never hear from us again (unless you send another request).`</li>
+            <li>`2) Sign up using the form below, and we will send you a once-daily digest of the current numbers for the location you have chosen.`</li>
+          </ul>
+        </section>
         <form onSubmit={ this.handleSignUp }>
           <div className="signup">
             <h1 ClassName="signupText">Sign Up</h1>
