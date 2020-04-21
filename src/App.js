@@ -8,6 +8,7 @@ import {
 import Header from './Header.js';
 import Home from './Home.js';
 import About from './About.js';
+import Footer from './Footer.js';
 import Confirmation from './Confirmation.js';
 import Unsubscribe from './Unsubscribe.js'
 
@@ -28,6 +29,7 @@ export default class App extends Component {
               <Route exact path='/confirmation' component={ Confirmation } />
               <Route exact path='/unsubscribe' component={ Unsubscribe } />
             </Switch>
+            <Footer />
         </Router>
       </div>
     )
