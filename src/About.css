@@ -1,0 +1,22 @@
+h1 {
+  text-align: center;
+}
+
+.team-members-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.team-member {
+  text-align: center;
+}
+
+.team-member img {
+  border-radius: 15px;
+}
+
+.social-icon {
+  width: 40px;
+  margin: 10px;
+}

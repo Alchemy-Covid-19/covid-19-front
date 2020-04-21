@@ -4,7 +4,6 @@ import {
   Switch,
   BrowserRouter as Router
 } from 'react-router-dom';
-
 import Header from './Header.js';
 import Home from './Home.js';
 import About from './About.js';
