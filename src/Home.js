@@ -41,7 +41,6 @@ export default class Home extends Component {
         <form onSubmit={ this.handleSignUp }>
           <div className="signup">
             <h1 className="signupText">Sign Up</h1>
-            <p>PING offers delivery Covid-19 stats, giving you just what you need to know about the stats in locations that matter to you most.</p>
             <div className="formInput">
               Name: <input value={this.state.nameSignUp} onChange={(e) => this.setState({ nameSignUp: e.target.value })} />
               Phone Number: +1 <input value={this.state.phoneNumberSignUp} type="phone number" onChange={(e) => this.setState({ phoneNumberSignUp: e.target.value })} />

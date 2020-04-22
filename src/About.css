@@ -1,5 +1,10 @@
 h1 {
   text-align: center;
+  margin-bottom: 100px;
+}
+
+.about-container {
+  margin-top: 300px;
 }
 
 h2 {

@@ -1,42 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap');
-
-.loginbg {
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-width: 100%;
-    min-height: 80%;
-    bottom: 10%;
-    top: 10%;
-    opacity: 1.90;
-
+.login li, p {
+    margin-top: 300px;
 }
-.content {
-    text-align:justify;
-    color: white;
-    font-family: 'PT Serif', serif;
-}
-
-.signup{
-    color: white;
+.signup {
+    margin-left: 10px;
     display: inline-block;
-    font-family: 'PT Serif', serif;
-    text-align: right;
+    color: black;
 }
-
-.p {
-    color: white;
-    font-weight: light;
-}
-
-li {
-    list-style-type: none;
-}
-
-button {
-    padding: 9px 25px;
-    background-color: rgba(3, 248, 207, 0.815);
-    border: none;
-    border-radius: 60%;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
+.signup p {
+    margin-left: 10px;
+    display: inline-block;
+    color: black;
 }
