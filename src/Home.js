@@ -39,8 +39,8 @@ export default class Home extends Component {
           </ul>
         </section>
         <form onSubmit={ this.handleSignUp }>
-          <div className="signup">
             <h1 ClassName="signupText">Sign Up</h1>
+          <div className="signup">
             <div className="formInput">
               Name: <input value={this.state.nameSignUp} onChange={(e) => this.setState({ nameSignUp: e.target.value })} />
               Phone Number: +1 <input value={this.state.phoneNumberSignUp} type="phone number" onChange={(e) => this.setState({ phoneNumberSignUp: e.target.value })} />

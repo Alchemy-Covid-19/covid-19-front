@@ -7,11 +7,10 @@ export default class Footer extends Component {
       return (
         <div className="footer">
           <div className="footerNav">
-            <ul className="footer__links" >
-              <li><Link to="/resources">Resources</Link></li>
-              <li><Link to="/about">About</Link></li>
-              <li><Link exact to="/unsubscribe">Unsubscribe</Link></li>
-            </ul>
+            <Link to="/resources">Resources</Link>
+              <Link to="/about">About</Link>
+              <Link exact to="/unsubscribe">Unsubscribe</Link>
+              <a href="https://coronavirus.1point3acres.com/en">Source</a>
           </div>
         </div>
       )
