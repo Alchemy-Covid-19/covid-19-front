@@ -35,12 +35,12 @@ export default class Home extends Component {
           <ul>
             <li>1) For on-demand stats, text the name of any US state or territory to +1 309-408-0627. We will reply with the current information for your chosen location. We will not store your phone number, and you will never hear from us again (unless you send another request).</li>
             <li>2) Sign up using the form below, and we will send you a once-daily digest of the current numbers for the location you have chosen.</li>
+            <p>PING offers delivery Covid-19 stats, giving you just what you need to know about the stats in locations that matter to you most.</p>
           </ul>
         </section>
         <form onSubmit={ this.handleSignUp }>
-          <div className="signup">
             <h1 ClassName="signupText">Sign Up</h1>
-            <p>PING offers delivery Covid-19 stats, giving you just what you need to know about the stats in locations that matter to you most.</p>
+          <div className="signup">
             <div className="formInput">
               Name: <input value={this.state.nameSignUp} onChange={(e) => this.setState({ nameSignUp: e.target.value })} />
               Phone Number: +1 <input value={this.state.phoneNumberSignUp} type="phone number" onChange={(e) => this.setState({ phoneNumberSignUp: e.target.value })} />
