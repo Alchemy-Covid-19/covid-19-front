@@ -40,7 +40,7 @@ export default class Home extends Component {
         </section>
         <form onSubmit={ this.handleSignUp }>
           <div className="signup">
-            <h1 ClassName="signupText">Sign Up</h1>
+            <h1 className="signupText">Sign Up</h1>
             <p>PING offers delivery Covid-19 stats, giving you just what you need to know about the stats in locations that matter to you most.</p>
             <div className="formInput">
               Name: <input value={this.state.nameSignUp} onChange={(e) => this.setState({ nameSignUp: e.target.value })} />
