@@ -2,6 +2,17 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  
+}
+
+.about-container {
+  /* background: #eea9ca; */
+  padding: 50px;
+}
+
 .team-members-container {
   margin: 0 auto;
   display: flex;
@@ -9,11 +20,17 @@ h1 {
 }
 
 .team-member {
+  background: #FFF;
   text-align: center;
+  box-shadow: 10px 10px #eea9ca;
+  border: 2px solid #000;
+  border-radius: 15px;
+  padding: 20px;
 }
 
 .team-member img {
-  border-radius: 15px;
+  border-radius: 50%;
+  border: 1px solid #000;
 }
 
 .social-icon {

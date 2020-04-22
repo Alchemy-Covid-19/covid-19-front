@@ -13,7 +13,7 @@ export default class Home extends Component {
   handleSignUp = async (e) => {
     e.preventDefault();
     await request
-      .post('http://localhost:7890/api/v1/users/welcome', {
+      .post('https://covid-19-stat-production.herokuapp.com/api/v1/users/welcome', {
         firstName: this.state.nameSignUp,
         phoneNumber: this.state.phoneNumberSignUp,
         location: this.state.locationSignUp
