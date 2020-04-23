@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import request from 'superagent';
 import Location from './Location.js';
+import { createUser } from './utils/api-services.js'
 import './Home.css';
 
 export default class Home extends Component {
@@ -12,12 +12,7 @@ export default class Home extends Component {
 
   handleSignUp = async (e) => {
     e.preventDefault();
-    await request
-      .post('https://covid-19-stat-production.herokuapp.com/api/v1/users/welcome', {
-        firstName: this.state.nameSignUp,
-        phoneNumber: this.state.phoneNumberSignUp,
-        location: this.state.locationSignUp
-      })
+    await createUser(this.state.nameSignUp, this.state.phoneNumberSignUp, this.state.locationSignUp);
 
     this.props.history.push('/confirmation');
   }
