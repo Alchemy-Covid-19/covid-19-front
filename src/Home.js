@@ -13,7 +13,6 @@ export default class Home extends Component {
   handleSignUp = async (e) => {
     e.preventDefault();
     await createUser(this.state.nameSignUp, this.state.phoneNumberSignUp, this.state.locationSignUp);
-
     this.props.history.push('/confirmation');
   }
   
